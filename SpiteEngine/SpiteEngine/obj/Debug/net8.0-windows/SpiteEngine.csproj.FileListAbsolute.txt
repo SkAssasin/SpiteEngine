@@ -1,0 +1,17 @@
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\SpiteEngine.Form1.resources
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\SpiteEngine.csproj.GenerateResource.cache
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\SpiteEngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\SpiteEngine.AssemblyInfoInputs.cache
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\SpiteEngine.AssemblyInfo.cs
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\SpiteEngine.csproj.CoreCompileInputs.cache
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\bin\Debug\net8.0-windows\SpiteEngine.exe
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\bin\Debug\net8.0-windows\SpiteEngine.deps.json
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\bin\Debug\net8.0-windows\SpiteEngine.runtimeconfig.json
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\bin\Debug\net8.0-windows\SpiteEngine.dll
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\bin\Debug\net8.0-windows\SpiteEngine.pdb
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\SpiteEngine.Properties.Resources.resources
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\SpiteEngine.dll
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\refint\SpiteEngine.dll
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\SpiteEngine.pdb
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\SpiteEngine.genruntimeconfig.cache
+C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\ref\SpiteEngine.dll
