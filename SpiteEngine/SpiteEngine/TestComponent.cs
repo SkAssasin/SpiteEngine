@@ -6,8 +6,9 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using SpiteEngine.Libraries;
+using SpiteEngine;
 
-namespace GameEngineAtt1
+namespace SpiteEngine
 {
     public class TestComponent(int speed_) : Script
     {
@@ -21,7 +22,7 @@ namespace GameEngineAtt1
         {
             int x = Input.GetAxis("Horizontal");
             int y = Input.GetAxis("Vertical");
-            //dSystem.Diagnostics.Debug.WriteLine("x: " + object_.position.X + "; y: " + object_.position.Y);
+            System.Diagnostics.Debug.WriteLine("x: " + object_.position.X + "; y: " + object_.position.Y);
             Move(x, y);
 
             if (Input.GetButtonDown("Jump"))
@@ -37,7 +38,7 @@ namespace GameEngineAtt1
 
         public void DoBullshit()
         {
-            Destroy(object_);
+            game.ChangeScene(new SampleSceneVTwo()); 
         }
     }
 }

@@ -14,14 +14,14 @@ namespace SpiteEngine.Libraries
         public int rotation = _rotation;
         public List<Script> components { get; set; } = [.. _components.OfType<Script>()];
     }
-    public abstract class Script
+    public abstract class Script 
     {
         public Thing object_;
         public Form1 game;
 
         public virtual void Start()
         {
-
+            
         }
         public virtual void Update()
         {
@@ -33,7 +33,7 @@ namespace SpiteEngine.Libraries
         public void Destroy(Thing thingy)
         {
             foreach (Script s in thingy.components)
-                s.OnDestroy();
+                Destroy(s);
             game.currentSceneObjs.Remove(thingy);
         }
         public void Destroy(Script script)

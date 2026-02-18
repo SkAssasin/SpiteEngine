@@ -1,4 +1,4 @@
-using GameEngineAtt1;
+using SpiteEngine;
 using SpiteEngine.Libraries;
 using System.Reflection;
 
@@ -14,7 +14,17 @@ namespace SpiteEngine
             InitializeComponent();
             pickedScene.Setup();
             SetScene(pickedScene);
-
+        }
+        public void ChangeScene(Scene scn)
+        {
+            for (int i = currentSceneObjs.Count() - 1; i >= 0; i--)
+            {
+                System.Diagnostics.Debug.WriteLine(currentSceneObjs[i].name);
+                Destroy(currentSceneObjs[i]);
+            }
+            currentSceneObjs.RemoveAll(t => t != null);
+            scn.Setup();
+            SetScene(scn);
         }
         public void SetScene(Scene scn)
         {
@@ -36,15 +46,40 @@ namespace SpiteEngine
         }
         private void UpdateLoop(object sender, EventArgs e)
         {
-            foreach (Thing obj in currentSceneObjs)
-                foreach (Script s in obj.components)
-                    s.Update();
+            try
+            {
+                foreach (Thing obj in currentSceneObjs)
+                    try
+                    {
+                        foreach (Script s in obj.components)
+                            try
+                            {
+                            s.Update();
+                            }
+                            catch { }
+                    }
+                    catch { }
+            }
+            catch { }
 
-            foreach (InputButton b in Input.inputButtons)
+
+            foreach (InputButton b in Input.inputButtons)   
                 if (b.value == 3)
                     b.value = 0;
                 else if (b.value == 1)
                     b.value = 2;
+        }
+        public void Destroy(Thing thingy)
+        {
+            //foreach (Script s in thingy.components)
+            for (int i = thingy.components.Count() - 1; i >= 0; i--)
+                Destroy(thingy.components[i]);
+            //currentSceneObjs.Remove(thingy);
+        }
+        public void Destroy(Script script)
+        {
+            script.OnDestroy();
+            currentSceneObjs.Find(t => t.name == script.object_.name).components.Remove(script);
         }
 
         private void KeyReleased(object sender, KeyEventArgs e)
