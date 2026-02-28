@@ -8,6 +8,7 @@ namespace SpiteEngine
     {
         public Scene pickedScene = new SampleScene();
         public List<Thing> currentSceneObjs = [];
+        public Scene newScene;
 
         public Form1()
         {
@@ -16,6 +17,10 @@ namespace SpiteEngine
             SetScene(pickedScene);
         }
         public void ChangeScene(Scene scn)
+        {
+            newScene = scn;
+        }
+        void SwapScene(Scene scn)
         {
             for (int i = currentSceneObjs.Count() - 1; i >= 0; i--)
             {
@@ -28,6 +33,7 @@ namespace SpiteEngine
         }
         public void SetScene(Scene scn)
         {
+            pickedScene = newScene;
             foreach (Thing obj in scn.stuff)
             {
                 Thing ob_ = new(obj.name, obj.position, obj.scale, obj.rotation);
@@ -46,24 +52,11 @@ namespace SpiteEngine
         }
         private void UpdateLoop(object sender, EventArgs e)
         {
-            try
-            {
-                foreach (Thing obj in currentSceneObjs)
-                    try
-                    {
-                        foreach (Script s in obj.components)
-                            try
-                            {
-                            s.Update();
-                            }
-                            catch { }
-                    }
-                    catch { }
-            }
-            catch { }
+            currentSceneObjs.ForEach(t => t.components.ForEach(c => c.Update()));
+            if (newScene != pickedScene) SwapScene(newScene);
 
 
-            foreach (InputButton b in Input.inputButtons)   
+            foreach (InputButton b in Input.inputButtons)
                 if (b.value == 3)
                     b.value = 0;
                 else if (b.value == 1)
@@ -71,15 +64,17 @@ namespace SpiteEngine
         }
         public void Destroy(Thing thingy)
         {
-            //foreach (Script s in thingy.components)
             for (int i = thingy.components.Count() - 1; i >= 0; i--)
                 Destroy(thingy.components[i]);
-            //currentSceneObjs.Remove(thingy);
         }
         public void Destroy(Script script)
         {
             script.OnDestroy();
-            currentSceneObjs.Find(t => t.name == script.object_.name).components.Remove(script);
+            try
+            {
+                currentSceneObjs.Find(t => t.name == script.object_.name).components.Remove(script);
+            }
+            catch { }
         }
 
         private void KeyReleased(object sender, KeyEventArgs e)
