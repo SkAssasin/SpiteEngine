@@ -11,14 +11,13 @@ namespace SpiteEngine.Libraries
 {
     public class Sprite(Image image_) : Script
     {
-        private PictureBox? pBox = null;
+        private PictureBox? pBox = null; 
         public Image image = image_;
-        Bitmap bp = new Bitmap(image_);
+        Bitmap bp = new (image_);
 
         public override void Start()
         {
-
-            /*pBox = new()
+            pBox = new()
             {
                 Image = image,
                 Name = object_.name,
@@ -26,7 +25,7 @@ namespace SpiteEngine.Libraries
                 Size = new Size(object_.scale.Width, object_.scale.Height),
                 SizeMode = PictureBoxSizeMode.StretchImage,
             };
-            game.Controls.Add(pBox);*/
+            game.Controls.Add(pBox);
         }
         public override void Update()
         {

@@ -38,6 +38,7 @@ namespace SpiteEngine
 
         public void DoBullshit()
         {
+            //object_.components.Find(c => c.GetType() == new AudioPlayer().GetType()).Play();
             game.ChangeScene(new SampleSceneVTwo()); 
         }
     }

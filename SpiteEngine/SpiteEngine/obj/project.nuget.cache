@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "FLnz5N8cQ7qjh/la3m4R5IG2SpwcejWFEMBs+QW6zf+QZYoDbt3ABhzg8+PbwOsbBcHAbd8W7KElt2camFe7ug==",
+  "dgSpecHash": "Vz0QV+7mOtI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SpiteEngine.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SpiteEngine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\simon\\.nuget\\packages\\naudio\\2.3.0\\naudio.2.3.0.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\naudio.asio\\2.3.0\\naudio.asio.2.3.0.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\naudio.core\\2.3.0\\naudio.core.2.3.0.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\naudio.midi\\2.3.0\\naudio.midi.2.3.0.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\naudio.wasapi\\2.3.0\\naudio.wasapi.2.3.0.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\naudio.winforms\\2.3.0\\naudio.winforms.2.3.0.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\naudio.winmm\\2.3.0\\naudio.winmm.2.3.0.nupkg.sha512"
+  ],
   "logs": []
 }

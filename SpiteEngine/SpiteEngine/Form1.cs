@@ -22,7 +22,7 @@ namespace SpiteEngine
         }
         void SwapScene(Scene scn)
         {
-            for (int i = currentSceneObjs.Count() - 1; i >= 0; i--)
+            for (int i = currentSceneObjs.Count - 1; i >= 0; i--)
             {
                 System.Diagnostics.Debug.WriteLine(currentSceneObjs[i].name);
                 Destroy(currentSceneObjs[i]);
@@ -64,7 +64,7 @@ namespace SpiteEngine
         }
         public void Destroy(Thing thingy)
         {
-            for (int i = thingy.components.Count() - 1; i >= 0; i--)
+            for (int i = thingy.components.Count - 1; i >= 0; i--)
                 Destroy(thingy.components[i]);
         }
         public void Destroy(Script script)
