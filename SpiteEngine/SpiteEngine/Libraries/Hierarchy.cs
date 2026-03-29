@@ -13,6 +13,11 @@ namespace SpiteEngine.Libraries
         public Size scale = _scale;
         public int rotation = _rotation;
         public List<Script> components { get; set; } = [.. _components.OfType<Script>()];
+
+        public Script? GetComponent<C>() where C : Script
+        {
+            return components.OfType<C>().FirstOrDefault();
+        }
     }
     public abstract class Script 
     {

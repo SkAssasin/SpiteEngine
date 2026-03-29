@@ -7,41 +7,27 @@ using NAudio.Wave;
 
 namespace SpiteEngine.Libraries
 {
-    internal class AudioPlayer : Script
+    public class AudioPlayer(string audioFilePath) : Script
     {
-        private WaveOutEvent outputDevice;
-        private AudioFileReader audioFile;
-
+        private WaveOutEvent outputDevice = new WaveOutEvent();
+        private AudioFileReader audioFile = new AudioFileReader(@"C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\Libraries\OHMYGODITSDANIELFUCIK.wav");
+        private bool closing = false;
 
         public override void Start()
         {
-            
+            outputDevice.PlaybackStopped += (s, a) => { if (closing) { outputDevice.Dispose(); audioFile.Dispose(); } };
+            outputDevice.Init(audioFile);
+            game.FormClosing += (s, a) => { closing = true; outputDevice.Stop(); };
         }
-        public void GoPlay()
+        public void Play()
         {
-            if (outputDevice == null)
-            {
-                outputDevice = new WaveOutEvent();
-                outputDevice.PlaybackStopped += OnPlaybackStopped;
-            }
-            if (audioFile == null)
-            {
-                //audioFile = new AudioFileReader(@"C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\Libraries\OHMYGODITSDANIELFUCIK.wav");
-                audioFile = new AudioFileReader(@"C:\Libraries\OHMYGODITSDANIELFUCIK.wav");
-                outputDevice.Init(audioFile);
-            }
-            outputDevice.Play();
+            audioFile.Position = 0;
+            if(outputDevice.PlaybackState != PlaybackState.Playing)
+                outputDevice.Play();
         }
         public void Stop() 
         {
             outputDevice?.Stop();
-        }
-        private void OnPlaybackStopped(object sender, StoppedEventArgs args)
-        {
-            outputDevice.Dispose();
-            outputDevice = null;
-            audioFile.Dispose();
-            audioFile = null;
         }
     }
 }

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\libraries\\audioplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\libraries\\audioplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\testcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\testcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\samplescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\samplescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\libraries\\spriteanimated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\libraries\\spriteanimated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\libraries\\hierarchy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\libraries\\hierarchy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\samplescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\samplescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\samplescenevtwo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\samplescenevtwo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,17 +34,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "SpiteEngine\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Form1.Designer.cs",
+              "RelativeToolTip": "SpiteEngine\\Form1.Designer.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T17:12:36.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "SpriteAnimated.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Libraries\\SpriteAnimated.cs",
+              "RelativeDocumentMoniker": "SpiteEngine\\Libraries\\SpriteAnimated.cs",
+              "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Libraries\\SpriteAnimated.cs",
+              "RelativeToolTip": "SpiteEngine\\Libraries\\SpriteAnimated.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvz4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T15:08:47.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SampleScene.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SampleScene.cs",
+              "RelativeDocumentMoniker": "SpiteEngine\\SampleScene.cs",
+              "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SampleScene.cs",
+              "RelativeToolTip": "SpiteEngine\\SampleScene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAACAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T14:07:30.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Form1.cs",
               "RelativeDocumentMoniker": "SpiteEngine\\Form1.cs",
               "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Form1.cs",
               "RelativeToolTip": "SpiteEngine\\Form1.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA8wDYAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwDQAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-16T18:43:27.251Z",
               "EditorCaption": ""
@@ -52,64 +91,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AudioPlayer.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Libraries\\AudioPlayer.cs",
-              "RelativeDocumentMoniker": "SpiteEngine\\Libraries\\AudioPlayer.cs",
-              "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Libraries\\AudioPlayer.cs",
-              "RelativeToolTip": "SpiteEngine\\Libraries\\AudioPlayer.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB0AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T12:42:13.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SampleScene.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SampleScene.cs",
-              "RelativeDocumentMoniker": "SpiteEngine\\SampleScene.cs",
-              "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SampleScene.cs",
-              "RelativeToolTip": "SpiteEngine\\SampleScene.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAACLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T08:51:03.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SampleSceneVTwo.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SampleSceneVTwo.cs",
-              "RelativeDocumentMoniker": "SpiteEngine\\SampleSceneVTwo.cs",
-              "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SampleSceneVTwo.cs",
-              "RelativeToolTip": "SpiteEngine\\SampleSceneVTwo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T08:51:30.806Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "TestComponent.cs",
               "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\TestComponent.cs",
               "RelativeDocumentMoniker": "SpiteEngine\\TestComponent.cs",
               "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\TestComponent.cs",
               "RelativeToolTip": "SpiteEngine\\TestComponent.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwCQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T14:10:35.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Hierarchy.cs",
               "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Libraries\\Hierarchy.cs",
               "RelativeDocumentMoniker": "SpiteEngine\\Libraries\\Hierarchy.cs",
               "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Libraries\\Hierarchy.cs",
               "RelativeToolTip": "SpiteEngine\\Libraries\\Hierarchy.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwA4AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T08:41:13.171Z",
               "EditorCaption": ""

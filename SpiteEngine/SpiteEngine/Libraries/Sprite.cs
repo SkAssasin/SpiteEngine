@@ -11,9 +11,8 @@ namespace SpiteEngine.Libraries
 {
     public class Sprite(Image image_) : Script
     {
-        private PictureBox? pBox = null; 
+        private PictureBox? pBox = null;    
         public Image image = image_;
-        Bitmap bp = new (image_);
 
         public override void Start()
         {
