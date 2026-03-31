@@ -14,21 +14,34 @@ namespace SpiteEngine.Libraries
         private PictureBox? pBox = null;
         private System.Windows.Forms.Timer? t = null;
         public Image image = image_;
+        Bitmap[]? frames;
+        int currentFrame = 0;
         int[] xs = [0];
         int[] ys = [0];
-        int i = 0;
+        int animationIndex = 0;
+        bool animating = false;
 
         public override void Start()
         {
-            Rectangle rectangel = new(0, 0, image_.Width / framesX, image.Height / framesY);
-            Bitmap crop = new(rectangel.Width, rectangel.Height);
-            using (Graphics g = Graphics.FromImage(crop))
+            frames = new Bitmap[framesX * framesY];
+            System.Diagnostics.Debug.WriteLine("frames:" + frames.Length);
+            for (int y = 0; y < framesY; y++)
             {
-                g.DrawImage(image_, new Rectangle(0, 0, crop.Width, crop.Height), rectangel, GraphicsUnit.Pixel);
+                for (int x = 0; x < framesX; x++)
+                {
+                    Rectangle rectangel = new(x * (image_.Width / framesX), y * (image_.Height / framesY), image_.Width / framesX, image.Height / framesY);
+                    Bitmap crop = new(rectangel.Width, rectangel.Height);
+                    using (Graphics g = Graphics.FromImage(crop))
+                    {
+                        g.DrawImage(image_, new Rectangle(0, 0, crop.Width, crop.Height), rectangel, GraphicsUnit.Pixel);
+                    }
+                    frames[(y * framesX) + x] = crop;
+                    System.Diagnostics.Debug.WriteLine((y * framesX) + x);
+                }
             }
             pBox = new()
             {
-                Image = crop,
+                Image = frames[0],
                 Name = object_.name,
                 Location = new Point(object_.position.X, object_.position.Y),
                 Size = new Size(object_.scale.Width, object_.scale.Height),
@@ -49,21 +62,31 @@ namespace SpiteEngine.Libraries
         }
         private void NewFrame(object sender, EventArgs e)
         {
-            i = (i + 1) % xs.Length;
-            Rectangle rectangel = new(xs[i] * (image_.Width / framesX), ys[i] * (image_.Height / framesY), image_.Width / framesX, image.Height / framesY);
-            Bitmap crop = new(rectangel.Width, rectangel.Height);
-            using (Graphics g = Graphics.FromImage(crop))
+            if (!animating) return;
+            animationIndex = (animationIndex + 1) % xs.Length;
+            try
             {
-                g.DrawImage(image_, new Rectangle(0, 0, crop.Width, crop.Height), rectangel, GraphicsUnit.Pixel);
+                pBox.Image = frames[(ys[animationIndex] * framesX) + xs[animationIndex]];
             }
-            pBox.Image = crop;
+            catch { }
         }
         public void Animate(int speed, int[] iX, int[] iY)
         {
             xs = iX;
             ys = iY;
-            i = 0;
+            animationIndex = 0;
             t.Interval = speed;
+            animating = true;
+        }
+        public void NextFrame()
+        {
+            currentFrame = (currentFrame + 1) % frames.Length;
+            System.Diagnostics.Debug.WriteLine("we on frame: " + currentFrame);
+            pBox.Image = frames[currentFrame];
+        }
+        public void PauseAnimation()
+        {
+            animating = false;
         }
         public override void OnDestroy()
         {

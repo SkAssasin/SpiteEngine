@@ -10,11 +10,13 @@ namespace SpiteEngine.Libraries
     public class AudioPlayer(string audioFilePath) : Script
     {
         private WaveOutEvent outputDevice = new WaveOutEvent();
-        private AudioFileReader audioFile = new AudioFileReader(@"C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\Libraries\OHMYGODITSDANIELFUCIK.wav");
+        private AudioFileReader audioFile = new AudioFileReader(audioFilePath);
         private bool closing = false;
 
         public override void Start()
         {
+            if(audioFile == null) audioFile = new AudioFileReader(@"C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\Libraries\OHMYGODITSDANIELFUCIK.wav");
+
             outputDevice.PlaybackStopped += (s, a) => { if (closing) { outputDevice.Dispose(); audioFile.Dispose(); } };
             outputDevice.Init(audioFile);
             game.FormClosing += (s, a) => { closing = true; outputDevice.Stop(); };

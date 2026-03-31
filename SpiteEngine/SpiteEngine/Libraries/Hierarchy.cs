@@ -63,5 +63,9 @@ namespace SpiteEngine.Libraries
             stuff.Add(o);
             System.Diagnostics.Debug.WriteLine(o.components.Count);
         }
+        protected internal void SaveSelfAsCopy()
+        {
+
+        }
     }
 }

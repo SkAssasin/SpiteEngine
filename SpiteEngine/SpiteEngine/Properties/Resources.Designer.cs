@@ -93,6 +93,26 @@ namespace SpiteEngine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Testik {
+            get {
+                object obj = ResourceManager.GetObject("Testik", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Testik_2 {
+            get {
+                object obj = ResourceManager.GetObject("Testik 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WoodenBox {
             get {
                 object obj = ResourceManager.GetObject("WoodenBox", resourceCulture);
