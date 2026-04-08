@@ -36,7 +36,7 @@ namespace SpiteEngine
             pickedScene = newScene;
             foreach (Thing obj in scn.stuff)
             {
-                Thing ob_ = new(obj.name, obj.position, obj.scale, obj.rotation);
+                Thing ob_ = new(obj.name, obj.position, obj.scale);
                 foreach (Script s in obj.components)
                 {
                     var sc = s.GetType();
@@ -48,6 +48,28 @@ namespace SpiteEngine
                     s.Start();
                 }
                 currentSceneObjs.Add(ob_);
+            }
+        }
+        public void SaveScene(string name)
+        {
+            string? n = name == "" ? pickedScene.ToString() : name;
+
+            using(StreamWriter sw = File.CreateText("C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\" + name + ".cs"))
+            {
+                sw.WriteLine("using SpiteEngine.Libraries;\r\nusing SpiteEngine.Properties;\r\n\r\n\r\nnamespace SpiteEngine\r\n{\r\n\tinternal class " + name + " : Scene\r\n\t{\r\n\t\tpublic override void Setup()\r\n\t\t{");
+                foreach (Thing t in currentSceneObjs)
+                {
+                    sw.Write("\t\t\tAdd(new(\"{0}\", new({1}, {2}), new({3}, {4})", t.name, t.position.X, t.position.Y, t.scale.Width, t.scale.Height);
+                    foreach (Script s in t.components)
+                    {
+                        var sc = s.GetType();
+                        sw.Write(", new {0}()", s);
+                        //foreach (PropertyInfo v in sc.GetProperties())
+                            //sw.Write(v.GetType() == " ".GetType() ? "" : "");
+                    }
+                    sw.Write("));\r\n");
+                }
+                sw.WriteLine("\t\t}\r\n\t}\r\n}");
             }
         }
         private void UpdateLoop(object sender, EventArgs e)

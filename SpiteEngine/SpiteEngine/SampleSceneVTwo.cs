@@ -13,9 +13,9 @@ namespace SpiteEngine
     {
         public override void Setup()
         {
-            Add(new("sprite^2", new(25, 25), new(100, 100), 0, new Sprite(Resources.Enemy)));
-            Add(new("sprite^2", new(125, 125), new(100, 100), 0, new Sprite(Resources.Enemy)));
-            Add(new("sprite^2", new(225, 225), new(100, 100), 0, new Sprite(Resources.Enemy)));
+            Add(new("sprite^2", new(25, 25), new(100, 100), new Sprite(Resources.Enemy)));
+            Add(new("sprite^2", new(125, 125), new(100, 100), new Sprite(Resources.Enemy)));
+            Add(new("sprite^2", new(225, 225), new(100, 100), new Sprite(Resources.Enemy)));
         }
     }
 }

@@ -43,3 +43,12 @@ C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\bin\
 C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\bin\Debug\net8.0-windows\NAudio.WinMM.dll
 C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\SpiteEngine.csproj.AssemblyReference.cache
 C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\SpiteEng.228D8BD9.Up2Date
+C:\Users\Assasin\Documents\GitHub\SpiteEngine\SpiteEngine\SpiteEngine\bin\Debug\net8.0-windows\NAudio.dll
+C:\Users\Assasin\Documents\GitHub\SpiteEngine\SpiteEngine\SpiteEngine\bin\Debug\net8.0-windows\NAudio.Asio.dll
+C:\Users\Assasin\Documents\GitHub\SpiteEngine\SpiteEngine\SpiteEngine\bin\Debug\net8.0-windows\NAudio.Core.dll
+C:\Users\Assasin\Documents\GitHub\SpiteEngine\SpiteEngine\SpiteEngine\bin\Debug\net8.0-windows\NAudio.Midi.dll
+C:\Users\Assasin\Documents\GitHub\SpiteEngine\SpiteEngine\SpiteEngine\bin\Debug\net8.0-windows\NAudio.Wasapi.dll
+C:\Users\Assasin\Documents\GitHub\SpiteEngine\SpiteEngine\SpiteEngine\bin\Debug\net8.0-windows\NAudio.WinForms.dll
+C:\Users\Assasin\Documents\GitHub\SpiteEngine\SpiteEngine\SpiteEngine\bin\Debug\net8.0-windows\NAudio.WinMM.dll
+C:\Users\Assasin\Documents\GitHub\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\SpiteEngine.csproj.AssemblyReference.cache
+C:\Users\Assasin\Documents\GitHub\SpiteEngine\SpiteEngine\SpiteEngine\obj\Debug\net8.0-windows\SpiteEng.228D8BD9.Up2Date

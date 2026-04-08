@@ -7,7 +7,7 @@ using NAudio.Wave;
 
 namespace SpiteEngine.Libraries
 {
-    public class AudioPlayer(string audioFilePath) : Script
+    public class AudioPlayer(string audioFilePath, int volume_, bool loop_) : Script
     {
         private WaveOutEvent outputDevice = new WaveOutEvent();
         private AudioFileReader audioFile = new AudioFileReader(audioFilePath);
@@ -15,9 +15,10 @@ namespace SpiteEngine.Libraries
 
         public override void Start()
         {
-            if(audioFile == null) audioFile = new AudioFileReader(@"C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\Libraries\OHMYGODITSDANIELFUCIK.wav");
+            if(audioFile == null) audioFile = new AudioFileReader(@"C:\Users\Assasin\Documents\GitHub\SpiteEngine\SpiteEngine\SpiteEngine\Libraries\OHMYGODITSDANIELFUCIK.wav");
 
-            outputDevice.PlaybackStopped += (s, a) => { if (closing) { outputDevice.Dispose(); audioFile.Dispose(); } };
+            outputDevice.Volume = volume_;
+            outputDevice.PlaybackStopped += (s, a) => { if (closing) { outputDevice.Dispose(); audioFile.Dispose(); } if (loop_) Play(); };
             outputDevice.Init(audioFile);
             game.FormClosing += (s, a) => { closing = true; outputDevice.Stop(); };
         }

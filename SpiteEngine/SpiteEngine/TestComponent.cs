@@ -17,7 +17,7 @@ namespace SpiteEngine
         public override void Start()
         {
             SpriteAnimated? a = object_.GetComponent<SpriteAnimated>() as SpriteAnimated;
-            a.Animate(1000, [0, 1], [0, 0]);
+            a.Animate(300, [0, 1], [0, 0]);
         }
         public override void Update()
         {
@@ -40,11 +40,12 @@ namespace SpiteEngine
 
         public void DoBullshit()
         {
-            SpriteAnimated? a = object_.GetComponent<SpriteAnimated>() as SpriteAnimated;
-            a.Animate(250, [0, 1, 2, 3], [0, 0, 1, 1]);
+            //SpriteAnimated? a = object_.GetComponent<SpriteAnimated>() as SpriteAnimated;
+            //a.Animate(250, [0, 1, 2, 3], [0, 0, 1, 1]);
             //a.NextFrame();
             AudioPlayer? p = object_.GetComponent<AudioPlayer>() as AudioPlayer;
-            //p.Play();
+            p.Play();
+            game.SaveScene("SaveTest");
         }
     }
 }

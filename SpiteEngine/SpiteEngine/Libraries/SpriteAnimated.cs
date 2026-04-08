@@ -24,12 +24,11 @@ namespace SpiteEngine.Libraries
         public override void Start()
         {
             frames = new Bitmap[framesX * framesY];
-            System.Diagnostics.Debug.WriteLine("frames:" + frames.Length);
             for (int y = 0; y < framesY; y++)
             {
                 for (int x = 0; x < framesX; x++)
                 {
-                    Rectangle rectangel = new(x * (image_.Width / framesX), y * (image_.Height / framesY), image_.Width / framesX, image.Height / framesY);
+                    Rectangle rectangel = new(x * image_.Width / framesX, y * image_.Height / framesY, image_.Width / framesX, image.Height / framesY);
                     Bitmap crop = new(rectangel.Width, rectangel.Height);
                     using (Graphics g = Graphics.FromImage(crop))
                     {
@@ -41,7 +40,6 @@ namespace SpiteEngine.Libraries
             }
             pBox = new()
             {
-                Image = frames[0],
                 Name = object_.name,
                 Location = new Point(object_.position.X, object_.position.Y),
                 Size = new Size(object_.scale.Width, object_.scale.Height),
@@ -53,6 +51,8 @@ namespace SpiteEngine.Libraries
             t.Enabled = true;
             t.Interval = 250;
             t.Tick += NewFrame;
+
+            SetFrame(0, 0);
         }
         public override void Update()
         {
@@ -70,6 +70,14 @@ namespace SpiteEngine.Libraries
             }
             catch { }
         }
+        public void SetFrame(int iX, int iY) // Animate() for single frame anims
+        {
+            xs = new int[iX];
+            ys = new int[iY];
+            animationIndex = 0;
+            t.Interval = 999;
+            animating = true;
+        }
         public void Animate(int speed, int[] iX, int[] iY)
         {
             xs = iX;
@@ -83,6 +91,7 @@ namespace SpiteEngine.Libraries
             currentFrame = (currentFrame + 1) % frames.Length;
             System.Diagnostics.Debug.WriteLine("we on frame: " + currentFrame);
             pBox.Image = frames[currentFrame];
+            if (xs.Length == 0) PauseAnimation();
         }
         public void PauseAnimation()
         {

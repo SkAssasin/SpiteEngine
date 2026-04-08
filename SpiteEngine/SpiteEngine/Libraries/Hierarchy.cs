@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace SpiteEngine.Libraries
 {
-    public class Thing(string _someCoolName, Point _position, Size _scale, int _rotation, params Script[] _components)
+    public class Thing(string _someCoolName, Point _position, Size _scale, params Script[] _components)
     {
         public string name = _someCoolName;
         public Point position = _position;
         public Size scale = _scale;
-        public int rotation = _rotation;
         public List<Script> components { get; set; } = [.. _components.OfType<Script>()];
 
         public Script? GetComponent<C>() where C : Script
