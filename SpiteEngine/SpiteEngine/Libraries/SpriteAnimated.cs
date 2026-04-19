@@ -31,11 +31,8 @@ namespace SpiteEngine.Libraries
                     Rectangle rectangel = new(x * image_.Width / framesX, y * image_.Height / framesY, image_.Width / framesX, image.Height / framesY);
                     Bitmap crop = new(rectangel.Width, rectangel.Height);
                     using (Graphics g = Graphics.FromImage(crop))
-                    {
                         g.DrawImage(image_, new Rectangle(0, 0, crop.Width, crop.Height), rectangel, GraphicsUnit.Pixel);
-                    }
                     frames[(y * framesX) + x] = crop;
-                    System.Diagnostics.Debug.WriteLine((y * framesX) + x);
                 }
             }
             pBox = new()
@@ -49,7 +46,6 @@ namespace SpiteEngine.Libraries
             
             t = new();
             t.Enabled = true;
-            t.Interval = 250;
             t.Tick += NewFrame;
 
             SetFrame(0, 0);

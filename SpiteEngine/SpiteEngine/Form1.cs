@@ -1,6 +1,9 @@
 using SpiteEngine;
 using SpiteEngine.Libraries;
 using System.Reflection;
+using System.Diagnostics;
+using System;
+using SpiteEngine.Properties;
 
 namespace SpiteEngine
 {
@@ -16,17 +19,11 @@ namespace SpiteEngine
             pickedScene.Setup();
             SetScene(pickedScene);
         }
-        public void ChangeScene(Scene scn)
-        {
-            newScene = scn;
-        }
+        public void ChangeScene(Scene scn) { newScene = scn; }
         void SwapScene(Scene scn)
         {
             for (int i = currentSceneObjs.Count - 1; i >= 0; i--)
-            {
-                System.Diagnostics.Debug.WriteLine(currentSceneObjs[i].name);
                 Destroy(currentSceneObjs[i]);
-            }
             currentSceneObjs.RemoveAll(t => t != null);
             scn.Setup();
             SetScene(scn);
@@ -52,9 +49,9 @@ namespace SpiteEngine
         }
         public void SaveScene(string name)
         {
-            string? n = name == "" ? pickedScene.ToString() : name;
+            string? n = name == "" ? pickedScene.GetType().ToString() : name;
 
-            using(StreamWriter sw = File.CreateText("C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\" + name + ".cs"))
+            using(StreamWriter sw = File.CreateText("C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\" + name + ".cs"))
             {
                 sw.WriteLine("using SpiteEngine.Libraries;\r\nusing SpiteEngine.Properties;\r\n\r\n\r\nnamespace SpiteEngine\r\n{\r\n\tinternal class " + name + " : Scene\r\n\t{\r\n\t\tpublic override void Setup()\r\n\t\t{");
                 foreach (Thing t in currentSceneObjs)
@@ -63,9 +60,28 @@ namespace SpiteEngine
                     foreach (Script s in t.components)
                     {
                         var sc = s.GetType();
-                        sw.Write(", new {0}()", s);
-                        //foreach (PropertyInfo v in sc.GetProperties())
-                            //sw.Write(v.GetType() == " ".GetType() ? "" : "");
+                        sw.Write(", new {0}(", s);
+                        foreach (ConstructorInfo v in sc.GetConstructors())
+                        {
+                            int count = v.GetParameters().Length;
+                            foreach (ParameterInfo p in v.GetParameters())
+                            {
+                                if (p.ParameterType == typeof(int))
+                                    sw.Write("999");
+                                else if (p.ParameterType == typeof(string))
+                                    sw.Write("\"text ig?\"");
+                                else if (p.ParameterType == typeof(bool))
+                                    sw.Write("true");
+                                else if (p.ParameterType == typeof(Image))
+                                    sw.Write("Resources.Player");
+                                else
+                                    sw.Write("Null");
+
+                                if (count > 1) sw.Write(", ");
+                                count--;
+                            }
+                        }
+                        sw.Write(")");
                     }
                     sw.Write("));\r\n");
                 }
@@ -76,8 +92,6 @@ namespace SpiteEngine
         {
             currentSceneObjs.ForEach(t => t.components.ForEach(c => c.Update()));
             if (newScene != pickedScene) SwapScene(newScene);
-
-
             foreach (InputButton b in Input.inputButtons)
                 if (b.value == 3)
                     b.value = 0;

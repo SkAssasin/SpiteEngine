@@ -7,20 +7,37 @@ using NAudio.Wave;
 
 namespace SpiteEngine.Libraries
 {
-    public class AudioPlayer(string audioFilePath, int volume_, bool loop_) : Script
+    public class AudioPlayer : Script
     {
+        public string audioPath;
+        public int volume;
+        public bool loop;
+
         private WaveOutEvent outputDevice = new WaveOutEvent();
-        private AudioFileReader audioFile = new AudioFileReader(audioFilePath);
+        private AudioFileReader audioFile;
         private bool closing = false;
+
+        public AudioPlayer(string audioFilePath, int volume_, bool loop_)
+        {
+            audioPath = audioFilePath;
+            volume = volume_;
+            loop = loop_;
+        }
 
         public override void Start()
         {
-            if(audioFile == null) audioFile = new AudioFileReader(@"C:\Users\Assasin\Documents\GitHub\SpiteEngine\SpiteEngine\SpiteEngine\Libraries\OHMYGODITSDANIELFUCIK.wav");
-
-            outputDevice.Volume = volume_;
-            outputDevice.PlaybackStopped += (s, a) => { if (closing) { outputDevice.Dispose(); audioFile.Dispose(); } if (loop_) Play(); };
+            try
+            {
+                audioFile = new AudioFileReader(audioPath);
+            }
+            catch
+            {
+                audioFile = new AudioFileReader(@"C:\Users\simon\Documents\VS Projects\VS\SpiteEngine\SpiteEngine\SpiteEngine\Libraries\OHMYGODITSDANIELFUCIK.wav");
+            }
+            outputDevice.Volume = volume;
+            outputDevice.PlaybackStopped += (s, a) => { if (closing) { outputDevice.Dispose(); audioFile.Dispose(); } if (loop) Play(); };
             outputDevice.Init(audioFile);
-            game.FormClosing += (s, a) => { closing = true; outputDevice.Stop(); };
+            game.FormClosing += (s, a) => { loop = false; closing = true; outputDevice.Stop(); };
         }
         public void Play()
         {

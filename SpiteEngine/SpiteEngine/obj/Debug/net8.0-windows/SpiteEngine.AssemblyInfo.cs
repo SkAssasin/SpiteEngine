@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpiteEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d89a651c01d52108d7c821a952fb5884c358c55")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f764a37c6a1598a07b30443c77bb26ea51e90392")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpiteEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpiteEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6,6 +6,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using SpiteEngine.Libraries;
+using System.Diagnostics;
 using SpiteEngine;
 
 namespace SpiteEngine
@@ -23,7 +24,7 @@ namespace SpiteEngine
         {
             int x = Input.GetAxis("Horizontal");
             int y = Input.GetAxis("Vertical");
-            //System.Diagnostics.Debug.WriteLine("x: " + object_.position.X + "; y: " + object_.position.Y);
+            //Debug.WriteLine("x: {0}; y: {1}", x, y);
             Move(x, y);
 
             if (Input.GetButtonDown("Jump"))
@@ -43,8 +44,8 @@ namespace SpiteEngine
             //SpriteAnimated? a = object_.GetComponent<SpriteAnimated>() as SpriteAnimated;
             //a.Animate(250, [0, 1, 2, 3], [0, 0, 1, 1]);
             //a.NextFrame();
-            AudioPlayer? p = object_.GetComponent<AudioPlayer>() as AudioPlayer;
-            p.Play();
+            //AudioPlayer? p = object_.GetComponent<AudioPlayer>() as AudioPlayer;
+            //p.Play();
             game.SaveScene("SaveTest");
         }
     }
