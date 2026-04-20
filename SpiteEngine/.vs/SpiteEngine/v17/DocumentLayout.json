@@ -1,30 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\",
+  "WorkspaceRootPath": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\spiteengine\\scenelosescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\scenelosescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\samplescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\samplescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\spiteengine\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\savetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\savetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\spiteengine\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\libraries\\audioplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\libraries\\audioplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\spiteengine\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\libraries\\hierarchy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\libraries\\hierarchy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\spiteengine\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\simon\\documents\\vs projects\\vs\\spiteengine\\spiteengine\\spiteengine\\testcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\testcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\assasin\\documents\\github\\spiteengine\\spiteengine\\spiteengine\\images\\spritesheet.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\images\\spritesheet.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\spiteengine\\scenelevelone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\scenelevelone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|c:\\users\\assasin\\documents\\github\\spiteengine\\spiteengine\\spiteengine\\images\\textyoulose.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{83DDE8D1-13D6-4C3F-8BF9-A81A46FCC48B}|SpiteEngine\\SpiteEngine.csproj|solutionrelative:spiteengine\\images\\textyoulose.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,43 +42,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AudioPlayer.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Libraries\\AudioPlayer.cs",
-              "RelativeDocumentMoniker": "SpiteEngine\\Libraries\\AudioPlayer.cs",
-              "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Libraries\\AudioPlayer.cs",
-              "RelativeToolTip": "SpiteEngine\\Libraries\\AudioPlayer.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCUAAAB+AAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "TextYouLose.png - PNG [1180x200, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Images\\TextYouLose.png",
+              "RelativeDocumentMoniker": "SpiteEngine\\Images\\TextYouLose.png",
+              "ToolTip": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Images\\TextYouLose.png - PNG [1180x200, 32 bit, PNG]",
+              "RelativeToolTip": "SpiteEngine\\Images\\TextYouLose.png - PNG [1180x200, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-04-20T20:10:17.719Z",
+              "EditorCaption": " - PNG [1180x200, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SpriteSheet.png - PNG [480x480, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Images\\SpriteSheet.png",
+              "RelativeDocumentMoniker": "SpiteEngine\\Images\\SpriteSheet.png",
+              "ToolTip": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Images\\SpriteSheet.png - PNG [480x480, 32 bit, PNG]",
+              "RelativeToolTip": "SpiteEngine\\Images\\SpriteSheet.png - PNG [480x480, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-04-20T20:08:53.322Z",
+              "EditorCaption": " - PNG [480x480, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Player.cs",
+              "RelativeDocumentMoniker": "SpiteEngine\\Player.cs",
+              "ToolTip": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Player.cs",
+              "RelativeToolTip": "SpiteEngine\\Player.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowC4AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T15:00:54.297Z",
+              "WhenOpened": "2026-03-31T15:03:24.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Projectile.cs",
+              "DocumentMoniker": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Projectile.cs",
+              "RelativeDocumentMoniker": "SpiteEngine\\Projectile.cs",
+              "ToolTip": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Projectile.cs",
+              "RelativeToolTip": "SpiteEngine\\Projectile.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T15:16:05.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SaveTest.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SaveTest.cs",
-              "RelativeDocumentMoniker": "SpiteEngine\\SaveTest.cs",
-              "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SaveTest.cs",
-              "RelativeToolTip": "SpiteEngine\\SaveTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Title": "EnemySpawner.cs",
+              "DocumentMoniker": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\EnemySpawner.cs",
+              "RelativeDocumentMoniker": "SpiteEngine\\EnemySpawner.cs",
+              "ToolTip": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\EnemySpawner.cs",
+              "RelativeToolTip": "SpiteEngine\\EnemySpawner.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAC7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T11:01:02.211Z",
+              "WhenOpened": "2026-04-19T18:59:11.063Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SampleScene.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SampleScene.cs",
-              "RelativeDocumentMoniker": "SpiteEngine\\SampleScene.cs",
-              "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SampleScene.cs",
-              "RelativeToolTip": "SpiteEngine\\SampleScene.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Enemy.cs",
+              "RelativeDocumentMoniker": "SpiteEngine\\Enemy.cs",
+              "ToolTip": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Enemy.cs",
+              "RelativeToolTip": "SpiteEngine\\Enemy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T14:53:33.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SceneLevelOne.cs",
+              "DocumentMoniker": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SceneLevelOne.cs",
+              "RelativeDocumentMoniker": "SpiteEngine\\SceneLevelOne.cs",
+              "ToolTip": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SceneLevelOne.cs",
+              "RelativeToolTip": "SpiteEngine\\SceneLevelOne.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T16:23:51.978Z",
               "EditorCaption": ""
@@ -78,40 +136,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Form1.cs",
-              "RelativeDocumentMoniker": "SpiteEngine\\Form1.cs",
-              "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Form1.cs",
-              "RelativeToolTip": "SpiteEngine\\Form1.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAYwE0AAAA1AAAAAAAAAA==",
+              "Title": "SceneLoseScreen.cs",
+              "DocumentMoniker": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SceneLoseScreen.cs",
+              "RelativeDocumentMoniker": "SpiteEngine\\SceneLoseScreen.cs",
+              "ToolTip": "C:\\Users\\Assasin\\Documents\\GitHub\\SpiteEngine\\SpiteEngine\\SpiteEngine\\SceneLoseScreen.cs",
+              "RelativeToolTip": "SpiteEngine\\SceneLoseScreen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T18:37:04.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TestComponent.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\TestComponent.cs",
-              "RelativeDocumentMoniker": "SpiteEngine\\TestComponent.cs",
-              "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\TestComponent.cs",
-              "RelativeToolTip": "SpiteEngine\\TestComponent.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T15:03:24.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Hierarchy.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Libraries\\Hierarchy.cs",
-              "RelativeDocumentMoniker": "SpiteEngine\\Libraries\\Hierarchy.cs",
-              "ToolTip": "C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\Libraries\\Hierarchy.cs",
-              "RelativeToolTip": "SpiteEngine\\Libraries\\Hierarchy.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T08:41:13.171Z",
+              "WhenOpened": "2026-04-19T13:07:17.481Z",
               "EditorCaption": ""
             }
           ]

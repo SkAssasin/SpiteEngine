@@ -10,7 +10,9 @@ namespace SpiteEngine.Libraries
     {
         public static InputAxis[] inputAxis = [new InputAxis("Horizontal", [Keys.D, Keys.Right], [Keys.A, Keys.Left]),
                                     new InputAxis("Vertical", [Keys.W, Keys.Up], [Keys.S, Keys.Down])];
-        public static InputButton[] inputButtons = [new InputButton("Jump", [Keys.Space])];
+        public static InputButton[] inputButtons = [new InputButton("Shoot", [Keys.Space]), 
+                                                    new InputButton("Left", [Keys.Left]), 
+                                                    new InputButton("Right", [Keys.Right])];
 
         public static int GetAxis(string name)
         {

@@ -34,21 +34,12 @@ namespace SpiteEngine.Libraries
         public virtual void OnDestroy()
         {
         }
-        public void Destroy(Thing thingy)
-        {
-            foreach (Script s in thingy.components)
-                Destroy(s);
-            game.currentSceneObjs.Remove(thingy);
-        }
-        public void Destroy(Script script)
-        {
-            script.OnDestroy();
-            game.currentSceneObjs.Find(t => t.name == script.object_.name).components.Remove(script);
-        }
     }
     public abstract class Scene
     {
         public List<Thing> stuff = [];
+        public Color windowColor = Color.White;
+        public Size windowSize = new(600, 600);
 
         public virtual void Setup()
         {
@@ -61,10 +52,6 @@ namespace SpiteEngine.Libraries
                 o.components.Add(scripts[i]);
             stuff.Add(o);
             System.Diagnostics.Debug.WriteLine(o.components.Count);
-        }
-        protected internal void SaveSelfAsCopy()
-        {
-
         }
     }
 }

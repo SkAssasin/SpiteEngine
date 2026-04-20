@@ -9,7 +9,7 @@ using System.Reflection;
 
 namespace SpiteEngine.Libraries
 {
-    public class Sprite(Image image_) : Script
+    public class Sprite(Image image_, string tag = "") : Script
     {
         private PictureBox? pBox = null;    
         public Image image = image_;
@@ -20,6 +20,7 @@ namespace SpiteEngine.Libraries
             {
                 Image = image,
                 Name = object_.name,
+                Tag = tag,
                 Location = new Point(object_.position.X, object_.position.Y),
                 Size = new Size(object_.scale.Width, object_.scale.Height),
                 SizeMode = PictureBoxSizeMode.StretchImage,

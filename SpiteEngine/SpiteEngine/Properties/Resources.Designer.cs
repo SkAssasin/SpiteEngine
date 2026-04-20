@@ -63,9 +63,9 @@ namespace SpiteEngine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Enemy {
+        internal static System.Drawing.Bitmap SpriteSheet {
             get {
-                object obj = ResourceManager.GetObject("Enemy", resourceCulture);
+                object obj = ResourceManager.GetObject("SpriteSheet", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,49 +73,9 @@ namespace SpiteEngine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PACMAN {
+        internal static System.Drawing.Bitmap TextYouLose {
             get {
-                object obj = ResourceManager.GetObject("PACMAN", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Player {
-            get {
-                object obj = ResourceManager.GetObject("Player", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Testik {
-            get {
-                object obj = ResourceManager.GetObject("Testik", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Testik_2 {
-            get {
-                object obj = ResourceManager.GetObject("Testik 2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WoodenBox {
-            get {
-                object obj = ResourceManager.GetObject("WoodenBox", resourceCulture);
+                object obj = ResourceManager.GetObject("TextYouLose", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

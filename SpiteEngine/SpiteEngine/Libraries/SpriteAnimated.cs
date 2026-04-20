@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Reflection;
+using SpiteEngine.Libraries;
+using System.Diagnostics;
+using SpiteEngine;
+using SpiteEngine.Properties;
 
 namespace SpiteEngine.Libraries
 {
-    public class SpriteAnimated(Image image_, int framesX, int framesY) : Script
+    public class SpriteAnimated(Image image_, int framesX, int framesY, string tag = "") : Script
     {
-        private PictureBox? pBox = null;
+        public PictureBox? pBox = null;
         private System.Windows.Forms.Timer? t = null;
         public Image image = image_;
         Bitmap[]? frames;
@@ -38,6 +36,7 @@ namespace SpiteEngine.Libraries
             pBox = new()
             {
                 Name = object_.name,
+                Tag = tag,
                 Location = new Point(object_.position.X, object_.position.Y),
                 Size = new Size(object_.scale.Width, object_.scale.Height),
                 SizeMode = PictureBoxSizeMode.StretchImage,
@@ -48,7 +47,7 @@ namespace SpiteEngine.Libraries
             t.Enabled = true;
             t.Tick += NewFrame;
 
-            SetFrame(0, 0);
+            //SetFrame(0, 0);
         }
         public override void Update()
         {

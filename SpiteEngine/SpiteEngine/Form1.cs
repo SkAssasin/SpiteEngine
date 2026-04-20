@@ -9,8 +9,10 @@ namespace SpiteEngine
 {
     public partial class Form1 : Form
     {
-        public Scene pickedScene = new SampleScene();
+        public Scene pickedScene = new SceneLevelOne();
         public List<Thing> currentSceneObjs = [];
+        public List<Thing> stuffToCreate = [];
+        public List<Thing> stuffToNuke = [];
         public Scene newScene;
 
         public Form1()
@@ -30,6 +32,9 @@ namespace SpiteEngine
         }
         public void SetScene(Scene scn)
         {
+            BackColor = scn.windowColor;
+            Size = scn.windowSize;
+
             pickedScene = newScene;
             foreach (Thing obj in scn.stuff)
             {
@@ -51,7 +56,7 @@ namespace SpiteEngine
         {
             string? n = name == "" ? pickedScene.GetType().ToString() : name;
 
-            using(StreamWriter sw = File.CreateText("C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\" + name + ".cs"))
+            using (StreamWriter sw = File.CreateText("C:\\Users\\simon\\Documents\\VS Projects\\VS\\SpiteEngine\\SpiteEngine\\SpiteEngine\\" + name + ".cs"))
             {
                 sw.WriteLine("using SpiteEngine.Libraries;\r\nusing SpiteEngine.Properties;\r\n\r\n\r\nnamespace SpiteEngine\r\n{\r\n\tinternal class " + name + " : Scene\r\n\t{\r\n\t\tpublic override void Setup()\r\n\t\t{");
                 foreach (Thing t in currentSceneObjs)
@@ -90,7 +95,13 @@ namespace SpiteEngine
         }
         private void UpdateLoop(object sender, EventArgs e)
         {
+            for (int i = 0; i < stuffToCreate.Count; i++) CretObje(stuffToCreate[i]);
+            stuffToCreate.Clear();
+            for (int j = 0; j < stuffToNuke.Count; j++) Destroy(stuffToNuke[j]);
+            stuffToNuke.Clear();
+
             currentSceneObjs.ForEach(t => t.components.ForEach(c => c.Update()));
+
             if (newScene != pickedScene) SwapScene(newScene);
             foreach (InputButton b in Input.inputButtons)
                 if (b.value == 3)
@@ -98,7 +109,11 @@ namespace SpiteEngine
                 else if (b.value == 1)
                     b.value = 2;
         }
-        public void Destroy(Thing thingy)
+        public void Nuke(Thing thingy)
+        {
+            stuffToNuke.Add(thingy);
+        }
+        void Destroy(Thing thingy)
         {
             for (int i = thingy.components.Count - 1; i >= 0; i--)
                 Destroy(thingy.components[i]);
@@ -111,6 +126,25 @@ namespace SpiteEngine
                 currentSceneObjs.Find(t => t.name == script.object_.name).components.Remove(script);
             }
             catch { }
+        }
+        public void CreateObject(Thing obj)
+        {
+            stuffToCreate.Add(obj);
+        }
+        void CretObje(Thing obj)
+        {
+            Thing ob_ = new(obj.name, obj.position, obj.scale);
+            foreach (Script s in obj.components)
+            {
+                var sc = s.GetType();
+                foreach (PropertyInfo variable in s.GetType().GetProperties())
+                    variable.SetValue(obj, sc, null);
+                ob_.components.Add(s);
+                s.object_ = obj;
+                s.game = this;
+                s.Start();
+            }
+            currentSceneObjs.Add(ob_);
         }
 
         private void KeyReleased(object sender, KeyEventArgs e)
